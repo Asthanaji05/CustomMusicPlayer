@@ -1,0 +1,138 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+
+}
+:root{
+    --color: rgb(255, 208, 0);
+}
+
+html,body{
+    color:#FFF;
+    background-color: rgb(0, 0, 0);
+    background-image: url('bg.webp');
+    background-size: cover;
+
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#page{
+    display: flex;
+    padding: 5%;
+}
+#left{
+    width:45%;
+    height: 50vh;
+    border:1px solid;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    background-image: url('1.jpg');
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation-name: bC , box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
+#left #mda{
+    border-top: 1px solid ;
+    width:100%;
+    animation-name: bC;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+    backdrop-filter: blur(4px);
+
+}
+
+@keyframes box {
+    0% { box-shadow: 1px 1px 50px red; } /* Red */
+    16.666% { box-shadow: 1px 1px 50px orange; } /* Orange */
+    33.333% { box-shadow: 1px 1px 50px yellow; } /* Yellow */
+    50% { box-shadow: 1px 1px 50px rgb(0, 255, 115); } /* Green */
+    66.666% { box-shadow: 1px 1px 50px rgb(0, 102, 255); } /* Blue */
+    83.333% { box-shadow: 1px 1px 50px rgb(59, 5, 207); } /* Indigo */
+    99% { box-shadow: 1px 1px 50px rgb(180, 8, 186); } /* Violet */
+    100% { box-shadow: 1px 1px 50px rgb(255, 0, 106); } /* Red */
+}
+@keyframes bC {
+    0% { border-color: red; } /* Red */
+    16.666% { border-color: orange; } /* Orange */
+    33.333% { border-color: yellow; } /* Yellow */
+    50% { border-color: lime; } /* Green */
+    66.666% { border-color: blue; } /* Blue */
+    83.333% { border-color: indigo; } /* Indigo */
+    100% { border-color: violet; } /* Violet */
+}
+
+@keyframes backColor {
+    0% { background-color: red; } /* Red */
+    16.666% { background-color: orange; } /* Orange */
+    33.333% { background-color: yellow; } /* Yellow */
+    50% { background-color: lime; } /* Green */
+    66.666% { background-color: blue; } /* Blue */
+    83.333% { background-color: indigo; } /* Indigo */
+    100% { background-color: violet; } /* Violet */
+}
+#left #mda h3{
+    margin-top:1vh;
+
+}
+#right{
+    width:55%;
+    padding: 5%;
+}
+.song{
+    border:1px solid;
+    animation-name: bC , box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    display: flex;
+    margin-block: 1vh;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1%;
+    backdrop-filter: blur(8px);
+}
+.song img{
+    width:10vw;
+    height:12vh;
+    border-radius: 10px;
+    border:1px solid;
+    animation-name: bC;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+#mda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw;
+    padding: 1%;
+}
+#mda h3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color);
+    padding: 1%;
+    border-radius: 50%;
+    animation-name: backColor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-delay: 0;
+}
+
